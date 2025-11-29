@@ -14,9 +14,10 @@ public class FoodItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+    private String itemName;
     private String itemDescription;
     private boolean isVeg;
-    private Number price;
+    private Integer price;
     private Integer restaurantId;
 
     @Column(nullable = false, columnDefinition = "INT DEFAULT 0")
